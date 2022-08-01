@@ -10,7 +10,7 @@ type SystemInfo = {
 
 export type Category = "Dessert" | "Dinners" | "Vegetarian" | "Easy & healthy";
 
-export interface Recipe {
+interface Recipe {
   title: string;
   category: Category[];
   preparationTime: number;
@@ -21,7 +21,7 @@ export interface Recipe {
   photo: Image;
 }
 
-type RecipeCollection = Omit<Recipe, "ingredients" | "preparation" | "photo">;
+export type RecipeCollection = Omit<Recipe, "ingredients" | "preparation" | "photo">;
 
 export interface RecipeCollectionData {
   recipeCollection: {
@@ -33,7 +33,7 @@ export interface RecipeDetailVariables {
   id: string;
 }
 
-type RecipeDetail = Omit<Recipe, "thumbnail" | "sys">;
+export type RecipeDetail = Omit<Recipe, "thumbnail" | "sys">;
 
 export interface RecipeDetailData {
   recipe: RecipeDetail;

@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import { GET_RECIPES } from "../api/recipes";
 import RecipeCard from "../components/RecipeCard";
+import Spinner from '../components/Spinner';
 import { RecipeCollectionData } from "../models/recipes";
 
 const Recipes = () => {
@@ -10,7 +11,7 @@ const Recipes = () => {
 
   const { loading, error, data } = useQuery<RecipeCollectionData>(GET_RECIPES);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Spinner />;
   if (error) return <p>Error: {JSON.stringify(error)}</p>;
 
   const handleNavigateToDetail = (recipeId: string) => () =>

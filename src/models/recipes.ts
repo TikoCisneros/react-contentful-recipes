@@ -1,3 +1,5 @@
+import { RichText } from './richText';
+
 type Image = {
   url: string;
 };
@@ -15,7 +17,7 @@ export interface Recipe {
   thumbnail: Image;
   sys: SystemInfo;
   ingredients: string[];
-  preparation: unknown;
+  preparation: RichText;
   photo: Image;
 }
 

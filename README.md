@@ -2,7 +2,7 @@
 
 Recipes blog made with React, Typescript, Contentful, Apollo Client, Tailwind CSS and ViteJS.
 
-![Dr Cook Blog](https://github.com/TikoCisneros/react-contentful-recipes/tree/main/src/assets/DrCook.gif)
+![Dr Cook Blog](https://github.com/TikoCisneros/react-contentful-recipes/blob/965f2ade1a2db6f8784b6aff3e7dde772e5763c8/src/assets/DrCook.gif)
 
 ## Set up
 

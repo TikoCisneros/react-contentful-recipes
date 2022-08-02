@@ -6,12 +6,12 @@ import Recipes from "../pages/Recipes";
 const Router = () => {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
+      <Routes>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Recipes />} />
           <Route path="recipe/:id" element={<RecipeDetail />} />
-        </Routes>
-      </Layout>
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
